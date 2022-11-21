@@ -22,16 +22,6 @@ public class OrderClient extends Client {
                 .log().all();
     }
 
-   /* public ValidatableResponse delete(int track){
-        String str = Integer.toString(track);
-        return given()
-                .spec(getSpec())
-                .log().all()
-                .when()
-                .delete(DELETE_ORDER_PATH+str)
-                .then()
-                .log().all();
-    }*/
     public ValidatableResponse getList() {
         return given()
                 .spec(getSpec())
@@ -42,3 +32,4 @@ public class OrderClient extends Client {
                 .log().all();
     }
 }
+

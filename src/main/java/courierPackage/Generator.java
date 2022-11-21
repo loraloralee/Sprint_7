@@ -14,5 +14,5 @@ public class Generator
         return randomStr;
 
     }
-
 }
+

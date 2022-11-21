@@ -36,11 +36,6 @@ public class OrderCreateTest {
         orderClient = new OrderClient();
     }
 
-    /*@After
-    public void cleanUp(){
-        orderClient.delete(track);
-    }*/
-
     @DisplayName("Order can be created with different colors")
     @Test
     public void orderСanBeCreatedWithDifferentColorsTest() {
@@ -52,3 +47,4 @@ public class OrderCreateTest {
     }
 
 }
+
