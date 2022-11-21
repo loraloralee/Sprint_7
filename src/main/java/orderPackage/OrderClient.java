@@ -37,7 +37,7 @@ public class OrderClient extends Client {
                 .spec(getSpec())
                 .log().all()
                 .when()
-                .get(ORDER_PATH+"?id=1")
+                .get(ORDER_PATH)
                 .then()
                 .log().all();
     }
