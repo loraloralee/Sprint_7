@@ -6,12 +6,11 @@ public class CourierGenerator {
         return new Courier(Generator.generateNew(),"Pass_1","Name_1");
     }
 
-    public static Courier createWithDoubleLogin(){
-        return new Courier("log_x","Pass_3","Name_3");
-    }
+
     public static Courier createWithDoubleLogin_1(){
         return new Courier("log_x","Pass_4","Name_4");
     }
+
 
 }
 

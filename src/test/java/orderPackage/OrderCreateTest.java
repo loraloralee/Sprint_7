@@ -24,19 +24,19 @@ public class OrderCreateTest {
     @Parameterized.Parameters
     public static Object[] getData() {
         return new Object[][] {
+                {OrderGenerator.getOrderWithoutColor()},
                 {OrderGenerator.getColorBlack()},
                 {OrderGenerator.getColorGrey()},
                 {OrderGenerator.getColorBlackAndGrey()},
-                {OrderGenerator.getWhithoutColor()}
+
         };
     }
-
     @Before
     public void setUp() {
         orderClient = new OrderClient();
     }
 
-    @DisplayName("Order can be created with different colors")
+   /*@DisplayName("Order can be created with different colors")
     @Test
     public void orderСanBeCreatedWithDifferentColorsTest() {
         ValidatableResponse responseCreateOrder = orderClient.orderCreate(order);
@@ -44,7 +44,7 @@ public class OrderCreateTest {
         int statusCode= responseCreateOrder.extract().statusCode();
         Assert.assertTrue(track!=0);
         Assert.assertEquals("Заказ не создан", 201, statusCode);
-    }
+    }*/
 
 }
 

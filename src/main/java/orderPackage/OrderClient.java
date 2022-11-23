@@ -7,10 +7,8 @@ public class OrderClient extends Client {
     private static final String ORDER_PATH= "/api/v1/orders";
     private static final String DELETE_ORDER_PATH= "/api/v1/orders/";
     private Order order;
-    int track;
 
 
-    //create
     public ValidatableResponse orderCreate(Order order){
         return given()
                 .spec(getSpec())

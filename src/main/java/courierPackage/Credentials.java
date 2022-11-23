@@ -20,9 +20,11 @@ public class Credentials {
         return new Credentials("", courier.getPassword());
     }
 
-    public static Credentials credentialsWithInvalidLoginPassword(Courier courier){
-        return new Credentials(courier.getLogin()+"ll", courier.getPassword());
-}
+    public static Credentials credentialsWithInvalidLoginPassword(Courier courier) {
+        return new Credentials(courier.getLogin() + "ll", courier.getPassword());
+    }
+
+
     public String getLogin() {
         return login;
     }

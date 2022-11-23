@@ -17,7 +17,6 @@ public class CourierLoginTest {
     public void setUp() {
         courierClient = new CourierClient();
         courier = CourierGenerator.getDefault();
-       // credentialsWithInvalidLoginPassword=CourierGenerator.createWithInvalidLoginPassword();
     }
     @After
     public void cleanUp(){
